@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cogxiom Solutions</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Home Section -->
+  <div class="home-container" id="home">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+  
+    <!-- Sticky Contact Button (now an anchor link) -->
+    <a href="#contact" class="contact-button">Contact Us</a>
+  
+    <!-- Sticky Logo in Top Left -->
+    <img src="Images/Logo.png" alt="Company Logo" class="logo">
+  
+    <!-- Background Video -->
+    <video autoplay loop muted class="background-video">
+      <source src="Images/background_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Dark Overlay -->
+    <div class="background-overlay"></div>
+  
+    <!-- Centered Text Container -->
+    <div class="text-container">
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <span class="fixed-text">Designing the future </span>
+        <span class="for-text">for </span>
+        <span class="changing-text"></span>
+      </div>
+  
+      <!-- Paragraph below hero content -->
+      <div class="Content">
+        <p>
+          Our mission is to empower businesses with intelligent, scalable solutions that drive innovation and growth. By leveraging AI, automation, and modern technology, we transform ideas into reality.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Bottom Navigation Links -->
+    <div class="bottom-nav">
+      <ul>
+        <!-- Link each menu item to the relevant section's id -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#faqs">FaQs</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- About Section -->
+  <div class="about-container" id="about">
+    <!-- Left Side: Images -->
+    <div class="about-images">
+      <div class="rightimage">
+        <div class="img-box">
+          <img src="Images/about3b.jpg" alt="Project workflow">
+        </div>
+      </div>
+      <div class="leftimage">
+        <div class="img-box">
+          <img src="Images/about1.jpg" alt="Design concept">
+        </div>
+        <div class="img-box">
+          <img src="Images/about2.jpg" alt="Web development">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Side: About Text -->
+    <div class="about-info">
+      <h3><span class="reveal-line">ABOUT COGXIOMS</span></h3>
+      <h1><span class="reveal-line">WHAT'S COGXIOMS?</span></h1>
+      <p>
+        <span class="reveal-line">
+          We specialize in AI, Machine Learning, Data Visualization,
+        </span>
+        <span class="reveal-line">
+          Data Scraping, and Automation to craft intelligent,
+        </span>
+        <span class="reveal-line">
+          scalable solutions that enhance decision-making,
+        </span>
+        <span class="reveal-line">
+          streamline processes, and drive impactful innovation.
+        </span>
+      </p>
+      <ul>
+        <li>
+          <span class="reveal-line">
+            <strong>Artificial Intelligence</strong> – Custom AI solutions to optimize operations and enhance decision-making.
+          </span>
+        </li>
+        <li>
+          <span class="reveal-line">
+            <strong>Machine Learning</strong> – Building intelligent systems that learn, adapt, and improve over time.
+          </span>
+        </li>
+        <li>
+          <span class="reveal-line">
+            <strong>Data Visualization</strong> – Transforming raw data into clear, actionable insights through interactive visuals.
+          </span>
+        </li>
+        <li>
+          <span class="reveal-line">
+            <strong>Data Scraping</strong> – Extracting valuable data from diverse online sources for better analysis and strategy.
+          </span>
+        </li>
+        <li>
+          <span class="reveal-line">
+            <strong>Automation</strong> – Automating repetitive tasks to improve efficiency and reduce operational costs.
+          </span>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Reels Section -->
+    <div class="reels-section">
+      <!-- Top Row -->
+      <div class="reels-wrapper">
+        <div class="reels-container top-row" id="topRow"></div>
+      </div>
+      <!-- Bottom Row -->
+      <div class="reels-wrapper">
+        <div class="reels-container bottom-row" id="bottomRow"></div>
+      </div>
+    </div>
+    
+    <!-- My Services Section -->
+    <section class="my-services" id="services">
+      <!-- Heading -->
+      <h2 class="services-heading">
+        How can we help you? <br />
+        <span>
+          We help premium brands achieve their future through innovation and creative perspectives.
+        </span>
+        <div class="underline"></div>
+      </h2>
+      <!-- Services Container -->
+      <div class="services-container" id="servicesContainer">
+        <!-- Service cards will be injected here by JavaScript -->
+      </div>
+    </section>
+    
+    <!-- Projects & FAQs Section -->
+    <div class="projects-container" id="projects">
+      <h2 class="projects-heading">Our Projects</h2>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards will be injected here -->
+      </div>
+      <!-- FAQ Section -->
+      <div class="faq-container" id="faqs">
+        <h2 class="faq-heading">Frequently Asked Questions</h2>
+        <div class="faq-items" id="faq-items">
+          <!-- FAQ items will be injected here by JavaScript -->
+        </div>
+      </div> <!-- Close faq-container -->
+    </div> <!-- Close projects-container -->
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <!-- Top Row: Lead Card (Left) and Form (Right) -->
+       
+      <h2 class="contact-heading">Contact Us For Any Questions</h2>
+      <div class="contact-row">
+        <!-- Left Column: Lead Card -->
+        <div class="contact-left">
+          <div class="lead-card">
+            <!-- Replace this image path with your actual CEO photo -->
+            <img src="Images/image1.jpg" alt="Muhammad Haseeb" class="lead-photo" />
+    
+            <h3 class="lead-name">Muhammad Haseeb</h3>
+            <p class="lead-title">CEO and Co-Founder</p>
+            <p class="lead-connect">
+              <span class="status-dot"></span>
+              Let's connect with our lead today
+            </p>
+          </div>
+        </div>
+    
+        <!-- Right Column: Contact Form -->
+        <div class="contact-right">
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="contact-btn">Send Now</button>
+          </form>
+        </div>
+      </div>
+    
+      <!-- Bottom: Contact Info Centered -->
+      <div class="contact-details">
+        <p class="contact-desc">
+          We’d love to hear from you! Whether you have a question, need a consultation,
+          or want to discuss how Cogxioms can help bring your vision to life, we’re here to assist.
+        </p>
+        <p class="contact-desc">
+          Reach out to us today, and let’s start something amazing together!
+          Your journey to innovative solutions begins with a simple conversation.
+        </p>
+        <div class="contact-info">
+          <h3>Contact info :</h3>
+          <ul>
+            <li><i class="icon">✉</i> contact@coxgioms.com</li>
+            <li><i class="icon">📞</i> +923130107453</li>
+            <li><i class="icon">📍</i> Sabzazar, Lahore, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+  </div> <!-- Close about-container -->
+  
+  <!-- JavaScript Sections -->
+  <!-- FAQ JavaScript -->
+  <script>
+    const faqs = [
+      {
+        question: "What advanced AI and data-driven solutions do you offer?",
+        answer:
+          "We offer a comprehensive suite of services including Artificial Intelligence, Deep Learning, Machine Learning, Natural Language Processing (NLP), Large Language Models (LLM), Computer Vision, AI Integration, API Integration, Data Visualization, Data Scraping, Automation, and Predictive Analysis."
+      },
+      {
+        question: "How can Artificial Intelligence benefit my business?",
+        answer:
+          "Our AI-powered solutions automate processes, enhance decision-making, and drive innovation to improve efficiency and reduce operational costs."
+      },
+      {
+        question: "What is the difference between Machine Learning and Deep Learning?",
+        answer:
+          "Machine Learning uses algorithms to learn from data, while Deep Learning employs multi-layered neural networks to capture complex patterns and deliver highly accurate predictions."
+      },
+      {
+        question: "How does Natural Language Processing (NLP) enhance communication?",
+        answer:
+          "NLP enables machines to understand, interpret, and respond to human language, which improves customer interactions, content analysis, and automation in communication."
+      },
+      {
+        question: "What role do Large Language Models (LLM) play in your services?",
+        answer:
+          "LLMs drive capabilities like text generation, summarization, and automated content creation, offering advanced tools for natural language understanding and interaction."
+      },
+      {
+        question: "How do you integrate AI into existing systems?",
+        answer:
+          "Through our AI Integration and API Integration services, we seamlessly embed AI capabilities into your current infrastructure without disrupting your operations."
+      },
+      {
+        question: "How do data visualization and predictive analysis help my business?",
+        answer:
+          "Data visualization transforms raw data into actionable insights through interactive charts and graphs, while predictive analysis forecasts trends to support strategic decision-making."
+      }
+    ];
+  
+    const faqContainer = document.getElementById("faq-items");
+    faqs.forEach(faq => {
+      const faqItem = document.createElement("div");
+      faqItem.className = "faq-item";
+  
+      const faqQuestion = document.createElement("h3");
+      faqQuestion.className = "faq-question";
+      faqQuestion.textContent = faq.question;
+  
+      const faqAnswer = document.createElement("p");
+      faqAnswer.className = "faq-answer";
+      faqAnswer.textContent = faq.answer;
+  
+      faqItem.appendChild(faqQuestion);
+      faqItem.appendChild(faqAnswer);
+      faqContainer.appendChild(faqItem);
+    });
+  </script>
+  
+  <!-- Projects JavaScript -->
+  <script>
+    const projects = [
+      {
+        title: "Geographic Loan Analysis Dashboard",
+        description: "Tableau dashboard integrating Excel and GeoJSON data to display regional deprivation and loan specifics with interactive filters.",
+        image: "Images/loanDashboard.png"
+      },
+      {
+        title: "Revenue YTD & Monthly Revenue",
+        description: "Grafana dashboard for real-time revenue tracking, providing monthly and year-to-date insights with customizable metrics.",
+        image: "Images/revenueDashboard.png"
+      },
+      {
+        title: "Starlink User Dashboard",
+        description: "API integration project for tracking Starlink user statistics, including real-time connectivity and usage analytics.",
+        image: "Images/starlinkDashboard.png"
+      },
+      {
+        title: "Sunnah.com Scraper",
+        description: "A web scraping tool for extracting Hadith from Sunnah.com and converting content into French for accessibility.",
+        image: "Images/sunnahScraper.png"
+      },
+      {
+        title: "Rice Detection System",
+        description: "Machine learning-based system for detecting and classifying different rice varieties using image recognition models.",
+        image: "Images/riceDetection.png"
+      },
+      {
+        title: "Model Makeup",
+        description: "A smart AI model that applies virtual makeup to a model in real-time based on selected options, enhancing facial features seamlessly.",
+        image: "Images/Makeup%20by%20model.png"
+      }
+    ];
+  
+    const projectsGrid = document.getElementById("projectsGrid");
+    projects.forEach(project => {
+      const card = document.createElement("div");
+      card.className = "project-card";
+  
+      const img = document.createElement("img");
+      img.src = project.image;
+      img.alt = project.title;
+      img.className = "project-image";
+  
+      const title = document.createElement("h3");
+      title.className = "project-title";
+      title.textContent = project.title;
+  
+      const description = document.createElement("p");
+      description.className = "project-description";
+      description.textContent = project.description;
+  
+      card.appendChild(img);
+      card.appendChild(title);
+      card.appendChild(description);
+      projectsGrid.appendChild(card);
+    });
+  </script>
+  
+  <!-- Services JavaScript -->
+  <script>
+    const services = [
+      {
+        title: "Artificial Intelligence",
+        description: "AI-powered solutions for automation, efficiency, and innovation."
+      },
+      {
+        title: "Deep Learning",
+        description: "Advanced neural networks that drive intelligent decision-making."
+      },
+      {
+        title: "Machine Learning",
+        description: "Building adaptive systems that learn and evolve over time."
+      },
+      {
+        title: "Natural Language Processing (NLP)",
+        description: "Enhancing machines to understand, interpret, and respond to human language."
+      },
+      {
+        title: "Large Language Models (LLM)",
+        description: "Developing AI-driven models for text generation, summarization, and automation."
+      },
+      {
+        title: "Computer Vision",
+        description: "AI-powered image and video analysis for object detection, recognition, and automation."
+      },
+      {
+        title: "AI Integration",
+        description: "Seamlessly embedding AI capabilities into existing systems."
+      },
+      {
+        title: "API Integration",
+        description: "Seamlessly integrating AI services into applications via robust APIs."
+      },
+      {
+        title: "Data Visualization",
+        description: "Transforming raw data into interactive and insightful visuals."
+      },
+      {
+        title: "Data Scraping",
+        description: "Extracting valuable data from the web for analysis and strategy."
+      },
+      {
+        title: "Automation",
+        description: "Streamlining workflows and reducing manual tasks using AI."
+      },
+      {
+        title: "Predictive Analysis",
+        description: "Forecasting trends and insights using data-driven approaches."
+      }
+    ];
+  
+    const serviceImage = "Images/Analysis-amico.png";
+    const container = document.getElementById("servicesContainer");
+    services.forEach(service => {
+      const card = document.createElement("div");
+      card.className = "service-card";
+  
+      const img = document.createElement("img");
+      img.src = serviceImage;
+      img.alt = service.title;
+      img.className = "service-image";
+  
+      const title = document.createElement("h3");
+      title.textContent = service.title;
+  
+      const description = document.createElement("p");
+      description.className = "service-description";
+      description.textContent = service.description;
+  
+      card.appendChild(img);
+      card.appendChild(title);
+      card.appendChild(description);
+      container.appendChild(card);
+    });
+  </script>
+  
+  <!-- Reels JavaScript -->
+  <script>
+    const topRowContainer = document.getElementById("topRow");
+    const images = Array.from({ length: 7 }, (_, i) => `Images/image${i + 1}.jpg`);
+    const topImages = [...images, ...images];
+    topImages.forEach((img, index) => {
+      const reelItem = document.createElement("div");
+      reelItem.className = "reel-item";
+      const imageElement = document.createElement("img");
+      imageElement.src = img;
+      imageElement.alt = `Reel Top ${index + 1}`;
+      reelItem.appendChild(imageElement);
+      topRowContainer.appendChild(reelItem);
+    });
+  
+    const bottomRowContainer = document.getElementById("bottomRow");
+    const images2 = Array.from({ length: 7 }, (_, i) => `Images/image${i + 8}.jpg`);
+    const bottomImages = [...images2, ...images2];
+    bottomImages.forEach((img, index) => {
+      const reelItem = document.createElement("div");
+      reelItem.className = "reel-item";
+      const imageElement = document.createElement("img");
+      imageElement.src = img;
+      imageElement.alt = `Reel Bottom ${index + 1}`;
+      reelItem.appendChild(imageElement);
+      bottomRowContainer.appendChild(reelItem);
+    });
+  </script>
+  
+  <!-- Combined JavaScript for Home Section Effects -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const rotatingWords = [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Computer Vision",
+        "Data Visualization",
+        "Data Scraping",
+        "Automation"
+      ];
+      let activeWordIndex = 0;
+      let letterIndex = 0;
+      let isTyping = true;
+      const displayTextElement = document.querySelector(".changing-text");
+  
+      function typeWord() {
+        const activeWord = rotatingWords[activeWordIndex];
+        if (isTyping) {
+          if (letterIndex < activeWord.length) {
+            displayTextElement.textContent = activeWord.slice(0, letterIndex + 1);
+            letterIndex++;
+            setTimeout(typeWord, 100);
+          } else {
+            isTyping = false;
+            setTimeout(() => {
+              activeWordIndex = (activeWordIndex + 1) % rotatingWords.length;
+              letterIndex = 0;
+              isTyping = true;
+              displayTextElement.textContent = "";
+              setTimeout(typeWord, 100);
+            }, 2000);
+          }
+        }
+      }
+  
+      typeWord();
+  
+      const customCursor = document.querySelector(".custom-cursor");
+      window.addEventListener("mousemove", function(e) {
+        customCursor.style.left = e.clientX + "px";
+        customCursor.style.top = e.clientY + "px";
+      });
+  
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -20% 0px",
+        threshold: 0.3,
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      }, observerOptions);
+  
+      const revealLines = document.querySelectorAll(".reveal-line");
+      revealLines.forEach((line, index) => {
+        line.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(line);
+      });
+    });
+  </script>
+</body>
+</html>

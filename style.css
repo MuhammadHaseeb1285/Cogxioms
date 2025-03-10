@@ -976,6 +976,13 @@ footer {
   {
     margin:auto;
   }
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;       /* Reduce the width to 90% of the container */
+    margin: 0 auto;   /* Center them if needed */
+    padding: 10px;    /* Optional: adjust padding for smaller screens */
+    font-size: 0.9rem;/* Optionally reduce font-size */
+  }
   
   /* Footer Section */
   .footer-container {

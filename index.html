@@ -223,6 +223,22 @@
         </div>
       </div>
     </section>
+      <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <!-- Left: Company Logo -->
+      <div class="footer-left">
+        <img src="Images/Logo.png" alt="Company Logo">
+      </div>
+      <!-- Right: Social Links -->
+      <div class="footer-right">
+        <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://facebook.com/yourusername" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
     
   </div> <!-- Close about-container -->
   
@@ -399,28 +415,29 @@
       }
     ];
   
-    const serviceImage = "Images/Analysis-amico.png";
-    const container = document.getElementById("servicesContainer");
-    services.forEach(service => {
-      const card = document.createElement("div");
-      card.className = "service-card";
-  
-      const img = document.createElement("img");
-      img.src = serviceImage;
-      img.alt = service.title;
-      img.className = "service-image";
-  
-      const title = document.createElement("h3");
-      title.textContent = service.title;
-  
-      const description = document.createElement("p");
-      description.className = "service-description";
-      description.textContent = service.description;
-  
-      card.appendChild(img);
-      card.appendChild(title);
-      card.appendChild(description);
-      container.appendChild(card);
+    
+const container = document.getElementById("servicesContainer");
+
+services.forEach((service, index) => {
+  const card = document.createElement("div");
+  card.className = "service-card";
+
+  const img = document.createElement("img");
+  img.src = `Images/service${index + 1}.png`;
+  img.alt = service.title;
+  img.className = "service-image";
+
+  const title = document.createElement("h3");
+  title.textContent = service.title;
+
+  const description = document.createElement("p");
+  description.className = "service-description";
+  description.textContent = service.description;
+
+  card.appendChild(img);
+  card.appendChild(title);
+  card.appendChild(description);
+  container.appendChild(card);
     });
   </script>
   
@@ -483,8 +500,8 @@
               letterIndex = 0;
               isTyping = true;
               displayTextElement.textContent = "";
-              setTimeout(typeWord, 100);
-            }, 2000);
+              setTimeout(typeWord, 60);
+            }, 1000);
           }
         }
       }

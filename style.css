@@ -1,596 +1,613 @@
-/* Global Reset */
+/* =============================================
+   Global Reset & Base Styles
+============================================= */
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-y: auto;
-    background-color: black;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Home Section */
-  .home-container {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    color: white;
-    overflow-x: hidden;
-    z-index: 0;
-  }
-  
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-    z-index: -2;
-  }
-  
-  .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-  
-  .logo {
-    position: fixed;
-    top: -50px;
-    left: 10px;
-    width: 250px;
-    height: auto;
-    object-fit: contain;
-    z-index: 10;
-  }
-  
-  .contact-button {
-    font-size: 1.3rem;
-    position: fixed;
-    top: 60px;
-    right: 50px;
-    z-index: 10;
-    padding: 10px 20px;
-    border: 1px solid rgb(213, 224, 48);
-    border-radius: 100px;
-    cursor: pointer;
-    background: transparent;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-    z-index: 2;
-  }
-  
-  .hero-content {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .fixed-text {
-    display: block;
-  }
-  
-  .for-text {
-    color: white;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-  }
-  
-  .changing-text {
-    color: rgb(222, 235, 40);
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid rgb(222, 235, 40);
-    vertical-align: middle;
-  }
-  
-  .Content {
-    margin-top: 0;
-  }
-  
-  .Content p {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: white;
-  }
-  
-  .bottom-nav {
-    position: fixed;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3000000;
-    background-color: transparent;
-    padding: 15px 30px;
-    border-radius: 20px;
-    border: 1px solid rgb(222, 235, 40);
-    font-size: 1.2rem;
-  }
-  
-  .bottom-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .bottom-nav li {
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .bottom-nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .custom-cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border: 2px solid white;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    animation: cursor-glitter 1.5s infinite;
-  }
-  
-  @keyframes cursor-glitter {
-    0% {
-      box-shadow: 0 0 5px 1px white;
-    }
-    50% {
-      box-shadow: 0 0 15px 2px rgb(213, 224, 48), 0 0 10px 5px white;
-    }
-    100% {
-      box-shadow: 0 0 5px 1px white;
-    }
-  }
-  
-  /* About Section */
-  .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 40px 0; /* Removed horizontal padding */
-    background: linear-gradient(135deg, rgba(111,93,212,0.3) 0.5%, rgba(141,16,89,0.3) 100%);
-    gap: 40px;
-    align-items: flex-start;
-  }
-  
-  .about-images {
-    margin-top: 100px;
-    flex: 1;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .rightimage {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .leftimage {
-    flex: 1;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
-  }
-  
-  .img-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .about-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    min-height: auto;
-    overflow: visible;
-  }
-  
-  .about-info h3 {
-    font-size: 1rem;
-    color: rgb(222,235,40);
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
-  }
-  
-  .about-info h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: rgb(222,235,40);
-    letter-spacing: 1px;
-  }
-  
-  .about-info p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: white;
-    margin-bottom: 1.5rem;
-  }
-  
-  .about-info ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.1rem;
-    color: white;
-    overflow: visible;
-  }
-  
-  .about-info ul li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 24px;
-    display: block;
-    min-height: 40px;
-  }
-  
-  .about-info ul li::before {
-    content: "•";
-    color: rgb(222,235,40);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      gap: 20px;
-    }
-    .about-images {
-      flex-direction: column;
-    }
-    .about-info {
-      min-height: auto;
-    }
-  }
-  
-  /* Line-by-Line Scroll Effect */
-  .reveal-line {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    white-space: normal;
-    overflow: visible;
-    padding: 2px;
-  }
-  
-  .reveal-line.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Reels Section */
-  .reels-section {
-    width: 100%;
-    background: linear-gradient(135deg, rgba(14,2,85,0.3) 0.5%, rgba(80,1,47,0.3) 100%);
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .reels-wrapper {
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .reels-container {
-    display: flex;
-    white-space: nowrap;
-    gap: 0;
-  }
-  
-  .top-row {
-    animation: slide-left 15s linear infinite;
-  }
-  
-  .bottom-row {
-    animation: slide-right 15s linear infinite;
-  }
-  
-  .reel-item {
-    flex: 0 0 auto;
-  }
-  
-  .reel-item img {
-    margin: 2px;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 3px;
-    opacity: 0.5;
-    transition: opacity 0.3s linear;
-  }
-  
-  .reel-item img:hover {
-    opacity: 1;
-  }
-  
-  @keyframes slide-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  
-  @keyframes slide-right {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-  }
-    
-/* ======================= */
-/* Services Section */
-/* ======================= */
-.my-services {
-    text-align: center;
-    padding: 60px 0;          /* Vertical padding only */
-    background: none;         /* Removed gradient background */
-    color: white;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .services-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(222,235,40);
-    margin-bottom: 40px;
-  }
-  .services-heading span
-  {
-    color: white;
-  }
-  
-  .services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  
-  /* Service Card */
-  .service-card {
-    background: rgba(255,255,255,0.15);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    background: rgb(222,235,40);
-  }
-  
-  .service-image {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .service-card h3 {
-    font-size: 1.2rem;
-    color: white;
-    font-weight: 600;
-    margin-top: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .service-description {
-    font-size: 0.9rem;
-    color: #f5f5f5;
-    margin-top: 8px;
-    transition: color 0.3s ease;
-  }
-  
-  .service-card:hover h3,
-  .service-card:hover .service-description {
-    color: black;
-  }
-  
-  /* ======================= */
-  /* Projects Section */
-  /* ======================= */
-  .projects-container {
-    text-align: center;
-    padding: 10px 0;          /* Vertical padding only */
-    background: none;         /* Removed gradient background */
-    color: #fff;
-    max-width: 90%;
-    margin: 0 auto;           /* Center container */
-  }
-  
-  .projects-heading {
-    font-size: 2.5rem;
-    color: rgb(222,235,40);
-    margin-bottom: 30px;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three projects per row */
-    gap: 20px;
-    margin: 0 auto;
-  }
-  
-  .project-card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
-    height: 400px;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 30px rgb(222,235,40);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-image:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(222,235,40);
-  }
-  
-  .project-description {
-    font-size: 1rem;
-    color: #ccc;
-    line-height: 1.5;
-  }
-  
-  
-  /* FAQ Section */
-  .faq-container {
-    text-align: center;
-    padding: 50px 0; /* Removed horizontal padding */
-    color: #fff;
-  }
-  
-  .faq-heading {
-    font-size: 2.5rem;
-    color: rgb(222,235,40);
-    margin-bottom: 30px;
-    position: relative;
-  }
-  
-  .faq-items {
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .faq-item {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  .faq-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 10px 30px rgb(222,235,40);
-  }
-  
-  .faq-question {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(222,235,40);
-    margin: 0;
-  }
-  
-  .faq-answer {
-    font-size: 1rem;
-    color: #ccc;
-    line-height: 1.5;
-    margin-top: 10px;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .faq-item:hover .faq-answer {
-    max-height: 200px;
-    opacity: 1;
-  }
-  /* ------------------------ */
-/* Contact Section Styles   */
-/* ------------------------ */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-y: auto;
+  background-color: black;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-/* Container for the entire section */
+/* =============================================
+   Home Section
+============================================= */
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.contact-button {
+  font-size: 1.2rem;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 10;
+  padding: 8px 16px;
+  border: 1px solid rgb(213, 224, 48);
+  border-radius: 100px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  z-index: 2;
+}
+
+.hero-content {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.fixed-text {
+  display: block;
+}
+
+.for-text {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.changing-text {
+  color: rgb(222, 235, 40);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(222, 235, 40);
+  vertical-align: middle;
+}
+
+.Content {
+  margin-top: 0;
+}
+
+.Content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000000;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(222, 235, 40);
+  font-size: 1rem;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  animation: cursor-glitter 1.5s infinite;
+}
+
+@keyframes cursor-glitter {
+  0% { box-shadow: 0 0 5px 1px white; }
+  50% { box-shadow: 0 0 15px 2px rgb(213, 224, 48), 0 0 10px 5px white; }
+  100% { box-shadow: 0 0 5px 1px white; }
+}
+
+/* =============================================
+   About Section
+============================================= */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(135deg, rgba(111,93,212,0.3) 0.5%, rgba(141,16,89,0.3) 100%);
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-images {
+  margin-top: 50px;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.rightimage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftimage {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-height: auto;
+  overflow: visible;
+}
+
+.about-info h3 {
+  font-size: 1rem;
+  color: rgb(222,235,40);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.about-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(222,235,40);
+  letter-spacing: 1px;
+}
+
+.about-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.about-info ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: white;
+  overflow: visible;
+}
+
+.about-info ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 20px;
+  display: block;
+  min-height: 30px;
+}
+
+.about-info ul li::before {
+  content: "•";
+  color: rgb(222,235,40);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .about-images {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .about-info h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Adjust background video size for small screens */
+  .background-video {
+    height: 60vh; /* Reduced height */
+    width: 100vw;
+    object-fit: cover;
+  }
+  /* Adjust the home container to match the video height */
+  .home-container {
+    min-height: 60vh;
+  }
+  
+}
+
+
+/* =============================================
+   Line-by-Line Scroll Effect
+============================================= */
+.reveal-line {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  white-space: normal;
+  overflow: visible;
+  padding: 2px;
+}
+
+.reveal-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =============================================
+   Reels Section
+============================================= */
+.reels-section {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(14,2,85,0.3) 0.5%, rgba(80,1,47,0.3) 100%);
+  padding: 0;
+  overflow: hidden;
+}
+
+.reels-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reels-container {
+  display: flex;
+  white-space: nowrap;
+  gap: 0;
+}
+
+.top-row {
+  animation: slide-left 15s linear infinite;
+}
+
+.bottom-row {
+  animation: slide-right 15s linear infinite;
+}
+
+.reel-item {
+  flex: 0 0 auto;
+}
+
+.reel-item img {
+  margin: 2px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
+}
+
+.reel-item img:hover {
+  opacity: 1;
+}
+
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* =============================================
+   Services Section
+============================================= */
+.my-services {
+  text-align: center;
+  padding: 40px 0;
+  background: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(222,235,40);
+  margin-bottom: 30px;
+}
+
+.services-heading span {
+  color: white;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Card */
+.service-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background: rgb(222,235,40);
+}
+
+.service-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.service-description {
+  font-size: 0.8rem;
+  color: #f5f5f5;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover h3,
+.service-card:hover .service-description {
+  color: black;
+}
+
+/* =============================================
+   Projects Section
+============================================= */
+.projects-container {
+  text-align: center;
+  padding: 20px 0;
+  background: none;
+  color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  font-size: 2rem;
+  color: rgb(222,235,40);
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  height: 350px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 30px rgb(222,235,40);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(222,235,40);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* =============================================
+   FAQ Section
+============================================= */
+.faq-container {
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  color: rgb(222,235,40);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.faq-items {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgb(222,235,40);
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(222,235,40);
+  margin: 0;
+}
+
+.faq-answer {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+  margin-top: 8px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-item:hover .faq-answer {
+  max-height: 150px;
+  opacity: 1;
+}
+
+/* =============================================
+   Contact Section
+============================================= */
 .contact-section {
-  padding: 50px 20px;
+  padding: 0 20px;
   max-width: 1200px;
   margin: 0 auto;
   color: #fff;
 }
 
-/* Row with Lead Card & Form */
 .contact-row {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 40px; /* Spacing before the bottom info */
+  margin-bottom: 40px;
 }
 
-/* Left Column: Lead Card */
 .contact-left {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
 }
 
-/* Right Column: Form */
 .contact-right {
   flex: 1;
   min-width: 280px;
-  max-width: 600px;
+  max-width: 800px;
 }
 
-/* Lead Card Styles */
 .lead-card {
-  width: 260px;               /* Card width */
-  padding: 20px;
-  margin: 0 auto;             /* Center horizontally within .contact-left */
-  background: #1c0d3f;        /* Dark purple background */
+  width: 240px;
+  padding: 15px;
+  margin: 0 auto;
+  background: #1c0d3f;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Photo inside Lead Card */
 .lead-photo {
   width: 180px;
   height: auto;
@@ -599,11 +616,10 @@ html, body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Name & Title in Lead Card */
 .lead-name {
-  margin-top: 15px;
-  font-size: 1.3rem;
-  color: #b39cd0;  /* Light purple for name */
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #deeb28;
   font-weight: 600;
 }
 
@@ -613,24 +629,21 @@ html, body {
   font-weight: bold;
 }
 
-/* Status Line */
 .lead-connect {
   color: #fff;
   font-size: 0.9rem;
   margin-top: 8px;
 }
 
-/* Green Dot */
 .status-dot {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #00ff00;
+  background: #deeb28;
   border-radius: 50%;
   margin-right: 5px;
 }
 
-/* Contact Form Styles */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -639,7 +652,7 @@ html, body {
 
 .form-group {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .form-group input {
@@ -665,7 +678,7 @@ html, body {
 
 .contact-btn {
   align-self: flex-start;
-  padding: 12px 30px;
+  padding: 10px 25px;
   font-size: 1rem;
   font-weight: bold;
   color: #000;
@@ -680,23 +693,21 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Bottom Info: Centered */
 .contact-details {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid #333; /* Optional separator line */
+  padding-top: 10px;
+  border-top: 1px solid #333;
 }
 
-/* Heading in the bottom info */
 .contact-heading {
-  font-size: 2rem;
-  color: #deeb28; /* Neon-green accent */
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #deeb28;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-/* Paragraph / Description */
 .contact-desc {
   font-size: 1rem;
   line-height: 1.6;
@@ -704,13 +715,12 @@ html, body {
   color: #ccc;
 }
 
-/* Additional Contact Info */
 .contact-info {
   margin-top: 30px;
 }
 
 .contact-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #deeb28;
   margin-bottom: 10px;
 }
@@ -735,10 +745,91 @@ html, body {
   color: #deeb28;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Contact Section */
 @media (max-width: 768px) {
   .contact-row {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+  }
+  .contact-left, .contact-right {
+    max-width: 100%;
+  }
+}
+
+/* =============================================
+   Footer Section
+============================================= */
+footer {
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  background: transparent;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-left img {
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.footer-right {
+  margin-top: 10px;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1rem;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   Global Responsive Adjustments
+============================================= */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .logo {
+    width: 150px;
+  }
+  .contact-button {
+    margin-top: 16px;
+    font-size: 1rem;
+    top: 50px;
+    right: 10px;
+    padding: 6px 12px;
+  }
+  .hero-content {
+    font-size: 2.5rem;
+  }
+  .text-container {
+    width: 65%;
+  }
+  .bottom-nav {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    bottom: 10px;
+  }
+  /* Services grid becomes one column */
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  /* Projects grid becomes one column */
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

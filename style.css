@@ -5,6 +5,7 @@
 :root {
   --font-family: "Poppins", sans-serif;
 }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ html, body {
 /* =============================================
    Home Section
 ============================================= */
+
 .home-container {
   position: relative;
   width: 100%;
@@ -67,7 +69,7 @@ html, body {
   right: 20px;
   z-index: 10;
   padding: 8px 16px;
-  border: 1px solid  #D5FF63;
+  border: 1px solid #D5FF63;
   border-radius: 100px;
   cursor: pointer;
   background: transparent;
@@ -86,12 +88,9 @@ html, body {
 }
 
 .hero-content {
-  font-size: 4rem;
-  /* font-family: "SF Pro Text Regular"; 
-;
-  font-family: "Bandica"; */
+  font-size: 2rem;
   font-family: Unbounded;
-  font-weight: 700px;
+  font-weight: 700;
   word-spacing: 8px;
   margin-bottom: 1rem;
 }
@@ -157,7 +156,6 @@ html, body {
 
 .bottom-nav a {
   color: white;
-  
   font-family: "SF Pro Text Semibold";
   text-decoration: none;
   font-size: 1.3rem;
@@ -178,27 +176,27 @@ html, body {
 
 @keyframes cursor-glitter {
   0% { box-shadow: 0 0 5px 1px white; }
-  50% { box-shadow: 0 0 15px 2px  #D5FF63, 0 0 10px 5px white; }
+  50% { box-shadow: 0 0 15px 2px #D5FF63, 0 0 10px 5px white; }
   100% { box-shadow: 0 0 5px 1px white; }
 }
 
 /* =============================================
    About Section
-   (No changes for small screens; same as large)
 ============================================= */
+
 .about-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   padding: 20px 0;
-  background:black;  gap: 20px;
+  background: black;
+  gap: 20px;
   align-items: flex-start;
 }
 
 .about-images {
   display: flex;
   flex-direction: column;
-  display: flex;
   gap: 10px;
   justify-content: center;
   text-align: center;
@@ -234,13 +232,12 @@ html, body {
   flex-grow: 1;
   min-height: auto;
   overflow: visible;
-  
-  padding-top:120px ;
+  padding-top: 120px;
 }
 
 .about-info h3 {
   font-size: 1rem;
-  color:#d5ff63;
+  color: #d5ff63;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }
@@ -248,7 +245,7 @@ html, body {
 .about-info h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color:#d5ff63;
+  color: #d5ff63;
   letter-spacing: 1px;
 }
 
@@ -277,7 +274,7 @@ html, body {
 
 .about-info ul li::before {
   content: "•";
-  color:#d5ff63;
+  color: #d5ff63;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -286,11 +283,12 @@ html, body {
 /* =============================================
    Line-by-Line Scroll Effect
 ============================================= */
-.reveal-line1
-{
+
+.reveal-line1 {
   justify-content: center;
   font-size: 2.7rem;
 }
+
 .reveal-line {
   display: inline-block;
   opacity: 0;
@@ -309,6 +307,7 @@ html, body {
 /* =============================================
    Reels Section
 ============================================= */
+
 .reels-section {
   width: 100%;
   padding: 0;
@@ -365,6 +364,7 @@ html, body {
 /* =============================================
    Services Section
 ============================================= */
+
 .my-services {
   text-align: center;
   padding: 40px 0;
@@ -379,7 +379,7 @@ html, body {
   font-size: 1.8rem;
   font-family: "HelveticaNeueBold";
   font-weight: bold;
-  color:#d5ff63;
+  color: #d5ff63;
   margin-bottom: 30px;
   text-align: center;
   justify-content: center;
@@ -412,7 +412,7 @@ html, body {
 
 .service-card:hover {
   transform: scale(1.05);
-  background:#d5ff63;
+  background: #d5ff63;
 }
 
 .service-image {
@@ -444,6 +444,7 @@ html, body {
 /* =============================================
    Projects Section
 ============================================= */
+
 .projects-container {
   text-align: center;
   padding: 20px 0;
@@ -455,7 +456,7 @@ html, body {
 
 .projects-heading {
   font-size: 2rem;
-  color:#d5ff63;
+  color: #d5ff63;
   margin-bottom: 20px;
 }
 
@@ -479,13 +480,13 @@ html, body {
 
 .project-card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 10px 30px#d5ff63;
+  box-shadow: 0px 10px 30px #d5ff63;
 }
 
 .project-image {
   width: 90%;
   height: 200px;
-  border-radius:20px;
+  border-radius: 20px;
   margin-bottom: 10px;
   padding-top: 10px;
   transition: transform 0.3s ease;
@@ -498,7 +499,7 @@ html, body {
 .project-title {
   font-size: 1.3rem;
   font-weight: bold;
-  color:#d5ff63;
+  color: #d5ff63;
 }
 
 .project-description {
@@ -510,6 +511,7 @@ html, body {
 /* =============================================
    FAQ Section
 ============================================= */
+
 .faq-container {
   text-align: center;
   padding: 30px 0;
@@ -518,7 +520,7 @@ html, body {
 
 .faq-heading {
   font-size: 2rem;
-  color:#d5ff63;
+  color: #d5ff63;
   margin-bottom: 20px;
   position: relative;
 }
@@ -543,13 +545,13 @@ html, body {
 
 .faq-item:hover {
   transform: scale(1.02);
-  box-shadow: 0px 10px 30px#d5ff63;
+  box-shadow: 0px 10px 30px #d5ff63;
 }
 
 .faq-question {
   font-size: 1.3rem;
   font-weight: bold;
-  color:#d5ff63;
+  color: #d5ff63;
   margin: 0;
 }
 
@@ -572,6 +574,7 @@ html, body {
 /* =============================================
    Contact Section
 ============================================= */
+
 .contact-section {
   padding: 0 20px;
   max-width: 1200px;
@@ -609,8 +612,8 @@ html, body {
 }
 
 .lead-photo {
-  width: 180px;
-  height: auto;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -648,6 +651,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 30px;
 }
 
 .form-group {
@@ -748,6 +752,7 @@ html, body {
 /* =============================================
    Footer Section
 ============================================= */
+
 footer {
   color: #fff;
   padding: 20px 0;
@@ -790,16 +795,18 @@ footer {
 /* =============================================
    Global Responsive Adjustments (Small Screens)
 ============================================= */
+
 @media (max-width: 768px) {
   /* Global Base */
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
+
   body {
-    padding: 0 10px;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
   }
+
   .glitter-overlay {
     position: fixed;
     top: 0;
@@ -811,7 +818,7 @@ footer {
     pointer-events: none;
     z-index: 9999;
   }
-  
+
   /* Glitter Animation Keyframes */
   @keyframes glitter {
     0% {
@@ -831,221 +838,257 @@ footer {
       transform: scale(1);
     }
   }
-  
+
   /* Class to trigger the glitter animation */
   .glitter-animation {
     animation: glitter 1s ease-out forwards;
   }
-  
+
   /* Home Section */
   .home-container {
     min-height: 60vh;
   }
+
   .background-video {
     height: 60vh;
   }
+
   .logo {
     width: 150px;
     top: -10px;
   }
+
   .contact-button {
     top: 50px;
     right: 10px;
     font-size: 1rem;
     padding: 6px 12px;
   }
+
   .hero-content {
     font-size: 2rem;
+    margin-top: 100px;
   }
+
   .text-container {
     width: 90%;
     top: 45%;
   }
+
   .bottom-nav {
     bottom: 10px;
     font-size: 0.9rem;
-    padding: 8px 15px;
+    padding: 2px 2px;
+    padding-left: 20px;
     overflow: hidden;
-    width: 85%;
+    width: 90%;
   }
-  
-  .bottom-nav a{
-    font-size: 1rem;
+
+  .bottom-nav a {
+    font-size: 0.8rem;
   }
-  
+
   /* Reels Section */
   .reel-item img {
-    /* Instead of shrinking to 100x100, force a minimum size */
     width: 50px;
     height: 50px;
     max-width: 90%;
   }
-  @media (max-width: 768px) {
-    /* Set the about section to display in a row */
-    .about-container {
-      flex-direction: row;
-      gap: 10px;
-      padding: 10px 0;
-      align-items: center;
-    }
-    
-    /* Left side: images container occupies, for example, 40% of the width */
-    .about-images {
-      width: 40%;
-      /* Stack images vertically if more than one */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 0; /* Remove extra top margin if needed */
-    }
-    
-    /* Right side: text container occupies the remaining width */
-    .about-info {
-      width: 60%;
-      padding: 0 10px;
-    }
-    
-    /* Center the image box content */
-    .img-box {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-    }
-    
-    /* Ensure images inside the img-box keep a reasonable size */
-    .img-box img {
-      width: 80%;
-      height: auto;
-      margin-bottom: 10px;
-    }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
   }
-  
+
+  .about-images {
+    display: none; /* Hide images on smaller screens */
+  }
+
+  .about-info {
+    width: 90%;
+    padding: 0 10px;
+    text-align: center; /* Center text content */
+  }
+
+  .about-info h3 {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .about-info h1 {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .about-info p {
+    font-size: 1.2rem; /* Smaller font size */
+    line-height: 1.5;
+  }
+
+  .about-info ul {
+    font-size: 1.1rem; /* Smaller font size */
+  }
+
+  .about-info ul li {
+    font-size: 1rem; /* Smaller font size */
+  }
+
   /* Services Section */
   .my-services {
     padding: 30px 0;
     margin-left: 0;
   }
+
   .services-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
+
   .services-container {
     grid-template-columns: 1fr;
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
+    height: auto;
   }
+
   .service-card {
     padding: 10px;
   }
+
   .service-card h3 {
     font-size: 1rem;
   }
+
   .service-description {
     font-size: 0.75rem;
   }
-  
+
   /* Projects Section */
   .projects-container {
     padding: 20px 0;
     width: 90%;
     margin: 0 auto;
   }
+
   .projects-heading {
     font-size: 1.8rem;
   }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
   .project-card {
     height: auto;
     padding: 10px;
   }
+
   .project-image {
     height: auto;
   }
+
   .project-title {
     font-size: 1.2rem;
   }
+
   .project-description {
     font-size: 0.85rem;
   }
-  
+
   /* FAQ Section */
   .faq-container {
     padding: 20px 0;
   }
+
   .faq-heading {
     font-size: 1.8rem;
   }
+
   .faq-items {
     width: 90%;
     margin: 0 auto;
   }
+
   .faq-question {
     font-size: 1.1rem;
   }
+
   .faq-answer {
     font-size: 0.85rem;
   }
-  
+
   /* Contact Section */
   .contact-section {
     padding: 0 10px;
     max-width: 100%;
     margin: 0 auto;
   }
+
   .contact-row {
     flex-direction: column;
     gap: 20px;
   }
+
   .contact-left, .contact-right {
     max-width: 100%;
   }
+
   .lead-card {
     width: 200px;
     padding: 10px;
   }
+
   .lead-photo {
     width: 150px;
   }
+
   .lead-name {
     font-size: 1rem;
   }
+
   .lead-title {
     font-size: 0.9rem;
   }
+
   .contact-form input,
   .contact-form textarea {
     font-size: 0.9rem;
     padding: 10px 12px;
   }
+
   .contact-btn {
     padding: 8px 20px;
     font-size: 0.9rem;
   }
+
   .contact-heading {
     font-size: 1.5rem;
   }
+
   .contact-desc {
     font-size: 0.9rem;
   }
+
   .contact-info h3 {
     font-size: 1rem;
   }
+
   .contact-info li {
     font-size: 0.9rem;
   }
-  .contact-btn
-  {
-    margin:auto;
+
+  .contact-btn {
+    margin: auto;
   }
+
   .contact-form input,
   .contact-form textarea {
-    width: 90%;       /* Reduce the width to 90% of the container */
-    margin: 0 auto;   /* Center them if needed */
-    padding: 10px;    /* Optional: adjust padding for smaller screens */
-    font-size: 0.9rem;/* Optionally reduce font-size */
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  
+
   /* Footer Section */
   .footer-container {
     flex-direction: column;
@@ -1053,17 +1096,57 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .footer-left img {
     height: 120px;
     width: 120px;
   }
-  .footer-right
-  {
+
+  .footer-right {
     margin-bottom: 80px;
   }
+
   .footer-right a {
     font-size: 0.9rem;
     margin-left: 10px;
     margin-bottom: 400px;
+  }
+}
+
+/* =============================================
+   Global Responsive Adjustments (Medium Screens)
+============================================= */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Adjustments for medium screens */
+  .hero-content {
+    font-size: 3rem;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =============================================
+   Global Responsive Adjustments (Large Screens)
+============================================= */
+
+@media (min-width: 993px) {
+  /* Adjustments for large screens */
+  .hero-content {
+    font-size: 4rem;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

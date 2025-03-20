@@ -7,6 +7,7 @@
   <title>Cogxiom Solutions</title>
   <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <!-- Home Section -->
@@ -179,7 +180,7 @@
         <div class="contact-left">
           <div class="lead-card">
             <!-- Replace this image path with your actual CEO photo -->
-            <img src="Images/image1.jpg" alt="Muhammad Haseeb" class="lead-photo" />
+            <img src="Images/haseeb.jpg" alt="Muhammad Haseeb" class="lead-photo" />
     
             <h3 class="lead-name">Muhammad Haseeb</h3>
             <p class="lead-title">CEO and Co-Founder</p>
@@ -192,7 +193,7 @@
     
         <!-- Right Column: Contact Form -->
         <div class="contact-right">
-          <form action="#" method="POST" class="contact-form">
+          <form id="contact-form" class="contact-form">
             <div class="form-group">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="text" name="subject" placeholder="Subject" required />
@@ -244,6 +245,36 @@
   </div> <!-- Close about-container -->
   
   <!-- JavaScript Sections -->
+   <!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Initialize EmailJS and Handle Form Submission -->
+  <script>
+    (function() {
+      emailjs.init("oPnz52lsad-Y0j9o-"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Debugging: Log form data
+      const formData = new FormData(this);
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+
+      // Send the email using EmailJS
+      emailjs.sendForm("service_v52b9oc", "template_1wckpao", this)
+        .then(function(response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent successfully!"); // Show success message
+          document.getElementById("contact-form").reset(); // Clear the form
+        }, function(error) {
+          console.log("FAILED...", error); // Log the error details
+          alert("Failed to send the message. Please try again."); // Show error message
+        });
+    });
+  </script>
   <!-- FAQ JavaScript -->
   <script>
     const faqs = [
